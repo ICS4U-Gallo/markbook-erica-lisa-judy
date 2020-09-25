@@ -9,13 +9,13 @@ def create_assignment(name: str, due: str, points: int) -> Dict:
     """Creates an assignment represented as a dictionary
     
     Args:
-        name: the name of the assignment.
-        due: the due date for the assignment.
-        points: what the assignment is out of (denominator).
+        name = "" the name of the assignment.
+        due = "" the due date for the assignment.
+        points = "" what the assignment is out of (denominator).
     Returns:
         Assignment as a dictionary.
     """
-
+    return {}
 
 
 def create_classroom(course_code: str, course_name: str, period: int, teacher: str) -> Dict:
@@ -35,13 +35,8 @@ def add_student_to_classroom(student: Dict, classroom: Dict):
         student: Student dict
         classroom: The classroom to add the student to
     """
-    first_name = input("What is the student's first name: ")
-    last_name = input("What is the student's last name: ")
-    student = {'First Name':first_name, 'Last Name':last_name}
+    pass
 
-    with open('markbook.txt', 'a') as f:
-      f.read()
-      classroom.append(student)    
 
 def remove_student_from_classroom(student: Dict, classroom: Dict):
     """Removes student from classroom
@@ -50,8 +45,7 @@ def remove_student_from_classroom(student: Dict, classroom: Dict):
         student: The student to be removed
         classroom: the class from which the student will be removed.
     """
-    with open('markbook.txt', 'a') as f:
-      del classroom[student]
+    pass
 
 
 def edit_student(student: Dict, **kwargs: Dict):
