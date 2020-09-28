@@ -8,7 +8,7 @@ name_student = input("What is the student's full name? \n")
 student_email = input("Enter the student's email: ")
 student_phone_number = input("Enter the student's phone number: ")
 student_grade = input("Enter the student's grade: ")
-
+ 
 student_info = { 
     "Student's Full Name" : name_student , 
     "Student's Email" : student_email , 
