@@ -5,18 +5,6 @@ Group members: Erica, Lisa, Judy
 from typing import Dict
 import json
  
-name_student = input("What is the student's full name? \n")
-student_email = input("Enter the student's email: ")
-student_phone_number = input("Enter the student's phone number: ")
-student_grade = input("Enter the student's grade: ")
- 
-student_info = { 
-    "Student's Full Name" : name_student , 
-    "Student's Email" : student_email , 
-    "Student's Phone Number" : student_phone_number , 
-    "Student's Grade" : student_grade 
-    }
-
 # Lisa
 class markbook:
     def _init_(self):
