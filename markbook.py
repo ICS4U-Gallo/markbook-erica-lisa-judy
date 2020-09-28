@@ -114,7 +114,7 @@ print(classroom)
 def calculate_average_mark(student: Dict) -> float:
     """Calculates the average mark of a student"""
 
-
+name_student = (input("WHat is the full name of the student? \n")
 no_of_grds = int(input("How many grades are being inputted? \n"))
 total_sum = 0
 
@@ -126,6 +126,7 @@ avg = total_sum/no_of_grds
 
 print(name_student , "'s average mark is" , avg)
 
+# judy 
 
 def add_student_to_classroom(student: Dict, classroom: Dict):
     """Adds student to a classroom
@@ -135,8 +136,10 @@ def add_student_to_classroom(student: Dict, classroom: Dict):
         classroom: The classroom to add the student to
     """
 
-    classroom.append(student_info)
+    classroom.append(student)
     return classroom
+
+# judy
     
 def remove_student_from_classroom(student: Dict, classroom: Dict):
     """Removes student from classroom
@@ -147,6 +150,6 @@ def remove_student_from_classroom(student: Dict, classroom: Dict):
     """
     with open('markbook.txt', 'a') as f:
         f.read()
-        del classroom[student_info]
+        del classroom[student]
     
     return (f"You successfully deleted {name_student} from {classroom['Course code']}.")
