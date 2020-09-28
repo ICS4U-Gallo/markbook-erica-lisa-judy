@@ -93,7 +93,7 @@ def edit_student(student: Dict, **kwargs: Dict):
     student_info['student_marks'] = int(input("What mark did the student get: "))
     student_info['comment'] = str(input("What is the comment: "))
 
-
+# ERICA
 def create_classroom(course_code: str, course_name: str, period: int, teacher: str) -> Dict:
     """Creates a classroom dictionary"""
 
@@ -110,7 +110,7 @@ classroom = {
     }
 print(classroom)
 
-
+# ERICA
 def calculate_average_mark(student: Dict) -> float:
     """Calculates the average mark of a student"""
 
