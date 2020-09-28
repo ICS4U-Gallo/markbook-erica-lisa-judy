@@ -1,0 +1,18 @@
+[
+    {
+        "course_code": "ICS4U",
+        "teacher_name": "Mr.Gallo",
+        "student_list": [
+            {
+                "first_name": "Lisa",
+                "last_name": "Tan",
+                "gender": "Female",
+                "student_number": 1114037,
+                "grade": 12,
+                "email": "jie.tan21@ycdsbk12.ca",
+                "marks": [
+                    {
+                        "assignment_name": "Markbook",
+                        "marks": 100
+                    }
+                ]
