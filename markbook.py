@@ -40,7 +40,8 @@ class markbook:
         file = open('markbook.json', 'w')
         file.write(json.dumps(self.list))
         file.close()
-        
+ 
+# Lisa
 def create_assignment(self, name: str, due: str, points: int) -> dict:
     """Creates an assignment represented as a dictionary
 
@@ -60,6 +61,7 @@ def create_assignment(self, name: str, due: str, points: int) -> dict:
 
     return assignment
 
+# Lisa
 def assignment_details(slef, classroom: dict, assignment: dict) -> list:
     return [assignment.items()] # assuming that a classroom list is created
 
@@ -79,6 +81,7 @@ def add_student(self, first_name: str, last_name: str, gender: str, image: str,
     }
     return student
 
+# Lisa
 def edit_student(student: Dict, **kwargs: Dict):
     """Edits the student's info with the provided key/value pairs
 
