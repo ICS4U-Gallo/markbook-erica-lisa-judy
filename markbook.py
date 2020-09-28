@@ -114,7 +114,7 @@ print(classroom)
 def calculate_average_mark(student: Dict) -> float:
     """Calculates the average mark of a student"""
 
-name_student = (input("WHat is the full name of the student? \n")
+name_student = input("What is the full name of the student? \n")
 no_of_grds = int(input("How many grades are being inputted? \n"))
 total_sum = 0
 
