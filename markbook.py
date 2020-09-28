@@ -4,6 +4,18 @@ Group members: Erica, Lisa, Judy
 """
 from typing import Dict
 
+name_student = input("What is the student's full name? \n")
+student_email = input("Enter the student's email: ")
+student_phone_number = input("Enter the student's phone number: ")
+student_grade = input("Enter the student's grade: ")
+
+student_info = { 
+    "Student's Full Name" : name_student , 
+    "Student's Email" : student_email , 
+    "Student's Phone Number" : student_phone_number , 
+    "Student's Grade" : student_grade 
+    }
+
 
 def create_assignment(name: str, due: str, points: int) -> Dict:
     """Creates an assignment represented as a dictionary
@@ -38,7 +50,7 @@ print(classroom)
 def calculate_average_mark(student: Dict) -> float:
     """Calculates the average mark of a student"""
 
-name_student = input("What is the student's full name? \n")
+
 no_of_grds = int(input("How many grades are being inputted? \n"))
 total_sum = 0
 
@@ -51,21 +63,6 @@ avg = total_sum/no_of_grds
 print(name_student , "'s average mark is" , avg)
 
 
-student = {'First Name': "unknown", 'Last Name': "unknown"}
-student['First Name'] = str(input("What is the student's first name: "))
-student['Last Name'] = str(input("What is the student's last name: "))
-
-classroom = {'Course code': 'unknown', 'Course Name': 'unknown', 'Period': 'unknown', 'Teacher': 'unknown'}
-classroom['Course Code'] = str(input("What is the Course Code: "))
-classroom['Course Name'] = str(input("What is the Course Name: "))
-classroom['Period'] = str(input("What is the period: "))
-classroom['Teacher'] = str(input("Who is the teacher: "))
-
-
-print(f"The student you choose to add to {classroom['Course Name']} is {student['First Name']} {student['Last Name']}!")
-
-
-
 def add_student_to_classroom(student: Dict, classroom: Dict):
     """Adds student to a classroom
 
@@ -74,11 +71,9 @@ def add_student_to_classroom(student: Dict, classroom: Dict):
         classroom: The classroom to add the student to
     """
 
-    with open('markbook.txt', 'a') as f:
-      f.read()
-      classroom.append(student)
-      print (f"You successfully added {student['First Name']} to {classroom['Course Code']}.") 
-
+    classroom.append(student_info)
+    return classroom
+    
 def remove_student_from_classroom(student: Dict, classroom: Dict):
     """Removes student from classroom
 
@@ -88,8 +83,9 @@ def remove_student_from_classroom(student: Dict, classroom: Dict):
     """
     with open('markbook.txt', 'a') as f:
         f.read()
-        del classroom[student]
-        print (f"You successfully deleted {student['First Name']} from {classroom['Course Code']}.")
+        del classroom[student_info]
+    
+    return (f"You successfully deleted {name_student} from {classroom['Course code']}.")
 
 
 def edit_student(student: Dict, **kwargs: Dict):
